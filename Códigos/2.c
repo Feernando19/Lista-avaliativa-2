@@ -13,19 +13,19 @@
     float calculo = 0, calculo1 = 0;
 
     scanf("%29[^\n]%*c", time1);
-//
+
     for(int i = 0;i<11;i++){
     scanf("%29[^;]; %c; %f%*c", time[i], &posicao[i], &forca);
     calculo += 8 * (posicao[i] == 'G' ? forca : 0) + 10 * (posicao[i] == 'L' ? forca : 0) + 5 * (posicao[i] == 'Z' ? forca : 0) + 8 * (posicao[i] == 'V' ? forca : 0) + 11 * (posicao[i] == 'M' ? forca : 0) + 12 * (posicao[i] == 'A' ? forca : 0);
     }
-//
+
     scanf("%29[^\n]%*c", time2);
 
     for(int i = 0;i<11;i++){
     scanf("%29[^;]; %c; %f%*c", time_a[i], &posicao1[i], &forca1);
     calculo1 += 8 * (posicao[i] == 'G' ? forca1 : 0) + 10 * (posicao[i] == 'L' ? forca1 : 0) + 5 * (posicao[i] == 'Z' ? forca1 : 0) + 8 * (posicao[i] == 'V' ? forca1 : 0) + 11 * (posicao[i] == 'M' ? forca1 : 0) + 12 * (posicao[i] == 'A' ? forca1 : 0);
     }
-//
+
 forca = calculo/100;
 forca1 = calculo1/100;
 
